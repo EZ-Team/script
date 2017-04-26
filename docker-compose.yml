@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  database:
+    build: ./mysql
+    ports:
+    - "3306:3006"
+
+  api-server:
+    build: ./EZStudioApi
+    ports:
+    - "8080:8080"
+
+  web-app:
+    build: ./EZStudioWebApp
+    ports:
+    - "80:80"
+
