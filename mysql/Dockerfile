@@ -1,0 +1,5 @@
+FROM mysql
+VOLUME /ezbase2:/var/lib/mysql
+ENV MYSQL_ROOT_PASSWORD=1234
+ENV MYSQL_DATABASE=ezbase
+EXPOSE 3306
